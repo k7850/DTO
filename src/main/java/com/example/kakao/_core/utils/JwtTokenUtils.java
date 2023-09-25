@@ -12,6 +12,7 @@ import com.example.kakao.user.User;
 public class JwtTokenUtils {
 
     public static String create(User user) {
+        
         String jwt = JWT.create()
                     .withSubject("metacoding-key")
                     .withClaim("id", user.getId())
